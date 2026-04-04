@@ -16,8 +16,6 @@ export default function HeroSection({ data }) {
         {/* Accent shapes */}
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-gold/8 rounded-full blur-[100px]" />
         <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-navy-light/50 rounded-full blur-[120px]" />
-        {/* Decorative line */}
-        <div className="absolute left-0 top-0 w-1.5 h-full bg-gradient-to-b from-gold via-gold/20 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 w-full pt-28 pb-16 lg:pt-32 lg:pb-20">
