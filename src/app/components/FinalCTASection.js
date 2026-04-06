@@ -1,10 +1,22 @@
+import Image from 'next/image';
+
 export default function FinalCTASection({ data, whatsappPhone }) {
   const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent("Hi, I'd like to learn more about NMBTS.")}`;
 
   return (
     <section className="relative bg-navy overflow-hidden">
+      {/* Background image layer */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy-light to-navy" />
+        <Image
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&q=80&auto=format&fit=crop"
+          alt="Business handshake"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-20"
+        />
+      </div>
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy" />
         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gold/8 to-transparent" />
         <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-maroon/10 to-transparent" />
         {/* Grid pattern */}

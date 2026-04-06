@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Navbar({ whatsappPhone }) {
   const [scrolled, setScrolled] = useState(false);
@@ -32,10 +33,15 @@ export default function Navbar({ whatsappPhone }) {
       <div className="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm transition-colors ${
-            scrolled ? 'bg-navy text-gold' : 'bg-white/15 backdrop-blur-sm text-white border border-white/20'
-          }`}>
-            N
+          <div className="relative w-11 h-11 flex items-center justify-center">
+            <Image
+              src="/nmbts-logo.png"
+              alt="NMBTS Logo"
+              width={44}
+              height={44}
+              className="object-contain relative z-10"
+              priority
+            />
           </div>
           <div>
             <div className={`text-base font-bold leading-tight transition-colors ${scrolled ? 'text-navy' : 'text-white'}`}>

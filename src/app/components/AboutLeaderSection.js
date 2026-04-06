@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutLeaderSection({ data }) {
   return (
     <section id="about" className="py-16 lg:py-24 bg-gray-50">
@@ -17,15 +19,29 @@ export default function AboutLeaderSection({ data }) {
           {/* Leader profile card */}
           <div className="lg:col-span-4">
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden h-full flex flex-col">
-              {/* Avatar area */}
-              <div className="bg-navy p-8 text-center relative">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-navy-light/30 to-transparent" />
-                <div className="relative z-10">
-                  <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-gold/30">
-                    <span className="text-3xl font-bold text-gold">PH</span>
+              {/* Portrait area */}
+              <div className="relative bg-navy">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=85&auto=format&fit=crop"
+                    alt="Pankaj Harwansh - Executive Director"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                  {/* Navy gradient overlay for text legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                  {/* Gold accent line on bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
+                  {/* Name & title overlaid on portrait */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                    <div className="inline-flex items-center gap-2 mb-2">
+                      <div className="h-px w-6 bg-gold" />
+                      <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold">Executive Director</span>
+                      <div className="h-px w-6 bg-gold" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white">Pankaj Harwansh</h3>
                   </div>
-                  <h3 className="text-xl font-bold text-white">Pankaj Harwansh</h3>
-                  <p className="text-sm text-gold/80 mt-1 font-medium">Executive Director</p>
                 </div>
               </div>
               {/* Info */}

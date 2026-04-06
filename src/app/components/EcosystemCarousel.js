@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 
 const cardIcons = [
   // BNI - people/network
@@ -31,25 +32,46 @@ export default function EcosystemCarousel({ cards }) {
 
   return (
     <div>
-      {/* Featured card (first card - BNI) — large layout like reference */}
+      {/* Featured card (first card - BNI) — large layout with image */}
       <div className="mb-8 bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-        <div className="grid lg:grid-cols-2">
-          {/* Left — colored panel */}
-          <div className="bg-navy relative p-10 lg:p-14 flex flex-col justify-center min-h-[280px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-navy-light/30 to-transparent" />
-            <div className="absolute top-0 left-0 w-1 h-full bg-gold" />
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center text-gold mb-6">
+        <div className="grid lg:grid-cols-5">
+          {/* Left — image (takes 3/5) */}
+          <div className="relative lg:col-span-3 min-h-[280px] lg:min-h-[400px]">
+            <Image
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=85&auto=format&fit=crop"
+              alt="BNI Navi Mumbai networking"
+              fill
+              sizes="(max-width: 1024px) 100vw, 60vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/40 to-transparent" />
+            <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
+              <div className="w-12 h-12 rounded-lg bg-gold/20 backdrop-blur-sm border border-gold/30 flex items-center justify-center text-gold mb-4">
                 {cardIcons[0]}
               </div>
-              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-gold/80 block mb-2">FLAGSHIP PLATFORM</span>
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">{featured.name}</h3>
-              <p className="text-sm font-medium text-gold">{featured.tagline}</p>
+              <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold block mb-2">Flagship Platform</span>
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-1">{featured.name}</h3>
+              <p className="text-sm font-medium text-gold/90">{featured.tagline}</p>
             </div>
           </div>
-          {/* Right — description */}
-          <div className="p-10 lg:p-14 flex flex-col justify-center">
-            <p className="text-gray-600 text-base leading-relaxed mb-6">{featured.description}</p>
+          {/* Right — description (takes 2/5) */}
+          <div className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-center bg-white">
+            <p className="text-gray-600 text-[15px] leading-relaxed mb-6">{featured.description}</p>
+            {/* Mini stats */}
+            <div className="grid grid-cols-3 gap-3 mb-6 pb-6 border-b border-gray-100">
+              <div>
+                <div className="text-xl font-bold text-navy">19</div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">Chapters</div>
+              </div>
+              <div>
+                <div className="text-xl font-bold text-navy">750+</div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">Members</div>
+              </div>
+              <div>
+                <div className="text-xl font-bold text-navy">2,500+Cr</div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">Business</div>
+              </div>
+            </div>
             <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${featured.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-maroon font-semibold text-sm hover:gap-3 transition-all">
               Learn More
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
