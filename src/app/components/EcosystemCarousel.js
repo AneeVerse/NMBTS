@@ -35,7 +35,7 @@ export default function EcosystemCarousel({ cards }) {
       {/* Featured card (first card - BNI) — full-width immersive layout */}
       <div className="mb-8 relative rounded-2xl overflow-hidden shadow-lg group">
         {/* Full-width background image */}
-        <div className="relative min-h-[320px] lg:min-h-[420px]">
+        <div className="relative">
           <Image
             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&q=85&auto=format&fit=crop"
             alt="BNI Navi Mumbai networking"
@@ -47,8 +47,8 @@ export default function EcosystemCarousel({ cards }) {
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
 
-          {/* Content overlay */}
-          <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-between">
+          {/* Content — relative so it contributes to card height and can't overflow */}
+          <div className="relative p-6 sm:p-8 lg:p-12 flex flex-col justify-between gap-8 min-h-[420px] lg:min-h-[420px]">
             {/* Top row — label + stats */}
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
               <div className="flex items-center gap-3">
