@@ -74,12 +74,16 @@ export default function HeroSection({ data }) {
           {/* Right — image */}
           <div className="lg:col-span-5 relative hidden lg:block">
             <div className="relative">
-              {/* Decorative frame */}
-              <div className="absolute -inset-3 border border-gold/20 rounded-2xl" />
-              <div className="absolute -inset-6 border border-white/5 rounded-2xl" />
+              {/* Offset background block for depth */}
+              <div className="absolute -right-5 -bottom-5 w-[85%] h-[85%] bg-gold/[0.06] rounded-2xl" />
+              {/* Top-left corner gold accent bracket */}
+              <div className="absolute -left-4 -top-4 w-20 h-20 pointer-events-none">
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gold/60" />
+                <div className="absolute top-0 left-0 w-[2px] h-full bg-gold/60" />
+              </div>
 
               {/* Main image */}
-              <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-[4/5]">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
                   alt="Business professionals networking"
@@ -88,25 +92,46 @@ export default function HeroSection({ data }) {
                   className="object-cover"
                   priority
                 />
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/10 to-transparent" />
+                {/* Stronger bottom gradient so glass card reads cleanly */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/30 to-transparent" />
+
+                {/* Top-right subtle label pill */}
+                <div className="absolute top-5 right-5">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+                    <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white">Est. Navi Mumbai</span>
+                  </div>
+                </div>
+
+                {/* Integrated glass stats bar — inside the image */}
+                <div className="absolute bottom-5 left-5 right-5">
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <svg className="w-3.5 h-3.5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gold">Trusted Ecosystem</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div>
+                        <div className="text-xl font-bold text-white leading-none">2,500<span className="text-gold text-sm">+Cr</span></div>
+                        <div className="text-[9px] text-white/70 uppercase tracking-wider mt-1">Generated</div>
+                      </div>
+                      <div className="border-l border-white/15 pl-3">
+                        <div className="text-xl font-bold text-white leading-none">5</div>
+                        <div className="text-[9px] text-white/70 uppercase tracking-wider mt-1">Platforms</div>
+                      </div>
+                      <div className="border-l border-white/15 pl-3">
+                        <div className="text-xl font-bold text-white leading-none">28</div>
+                        <div className="text-[9px] text-white/70 uppercase tracking-wider mt-1">Countries</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Floating badge card */}
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-2xl p-4 flex items-center gap-3 max-w-[240px]">
-                <div className="w-11 h-11 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
-                </div>
-                <div>
-                  <div className="text-xs font-semibold text-navy">Trusted Platform</div>
-                  <div className="text-[11px] text-gray-500">2,500+ Cr Generated</div>
-                </div>
-              </div>
-
-              {/* Floating top-right accent */}
-              <div className="absolute -top-4 -right-4 bg-gold rounded-xl shadow-xl p-4 text-navy">
-                <div className="text-2xl font-bold leading-none">5</div>
-                <div className="text-[10px] font-semibold uppercase tracking-wider mt-1">Platforms</div>
+              {/* Bottom-right corner gold accent bracket */}
+              <div className="absolute -right-4 -bottom-4 w-20 h-20 pointer-events-none">
+                <div className="absolute bottom-0 right-0 w-full h-[2px] bg-gold/60" />
+                <div className="absolute bottom-0 right-0 w-[2px] h-full bg-gold/60" />
               </div>
             </div>
           </div>
