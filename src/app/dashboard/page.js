@@ -3,6 +3,16 @@
 import { useState, useEffect } from 'react';
 
 const SECTION_CONFIG = {
+  meta: {
+    label: 'SEO & Meta Tags',
+    fields: {
+      title: { type: 'text', label: 'Meta Title' },
+      description: { type: 'textarea', label: 'Meta Description' },
+      keywords: { type: 'textarea', label: 'Meta Keywords (comma separated)', rows: 4 },
+      ogTitle: { type: 'text', label: 'OG Title (WhatsApp/Social preview)' },
+      ogDescription: { type: 'textarea', label: 'OG Description (WhatsApp/Social preview)' },
+    },
+  },
   hero: {
     label: 'Hero Section',
     fields: {

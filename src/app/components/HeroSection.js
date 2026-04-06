@@ -85,8 +85,8 @@ export default function HeroSection({ data }) {
               {/* Main image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
-                  alt="Business professionals networking"
+                  src="/hero.png"
+                  alt="NMBTS business networking event"
                   fill
                   sizes="(max-width: 1024px) 0vw, 40vw"
                   className="object-cover"

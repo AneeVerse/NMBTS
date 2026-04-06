@@ -37,9 +37,11 @@ export default async function Home() {
         <EcosystemSection data={content.ecosystem} />
         <WhoThisIsForSection data={content.whoThisIsFor} whatsappPhone={whatsappPhone} />
         <AboutLeaderSection data={content.aboutLeader} />
-        <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
+        <div id="contact">
+          <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
+          <Footer data={content.footer} />
+        </div>
       </main>
-      <Footer data={content.footer} />
       <WhatsAppSticky phone={whatsappPhone} />
     </>
   );

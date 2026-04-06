@@ -41,10 +41,10 @@ export default function AnimatedCounter({ value, suffix, label }) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl lg:text-5xl font-bold text-white mb-2 tracking-tight">
-        {count.toLocaleString('en-IN')}{suffix}
+      <div className="text-4xl lg:text-5xl font-bold text-gold mb-2 tracking-tight">
+        {count.toLocaleString('en-IN')}<span className="text-gold/70">{suffix}</span>
       </div>
-      <div className="text-sm text-white/70 font-medium uppercase tracking-wider">{label}</div>
+      <div className="text-xs text-white/50 font-semibold uppercase tracking-[0.15em]">{label}</div>
     </div>
   );
 }

@@ -1,4 +1,11 @@
 export const defaults = {
+  meta: {
+    title: "NMBTS - Business Networking, Advisory & Transitions | Navi Mumbai",
+    description: "NMBTS is Navi Mumbai's premier business growth ecosystem - BNI referral networking, TAB peer advisory, Corporate Connections, business broking, franchising & distribution. Led by Pankaj Harwansh.",
+    keywords: "BNI Navi Mumbai, business networking Navi Mumbai, peer advisory board Mumbai, The Alternative Board India, Corporate Connections Navi Mumbai, business broking Mumbai, buy sell business India, franchise advisory India, distribution business India, YBounce Ventures, DealsFlow Ventures, business coaching Navi Mumbai, CEO peer board Mumbai, SME advisory Navi Mumbai, Pankaj Harwansh, NMBTS, business growth Navi Mumbai, referral networking Mumbai, executive coaching Mumbai, business transitions India",
+    ogTitle: "NMBTS | Navi Mumbai's Complete Business Growth Ecosystem",
+    ogDescription: "From referral networking and peer advisory to M&A and franchising - NMBTS connects Navi Mumbai's business owners to the right platform at every stage of their journey.",
+  },
   hero: {
     headline: "One Ecosystem. Every Stage of Your Business Journey.",
     subheadline: "Networking | Peer Advisory | Business Transitions | Franchise & Distribution - All Under One Roof in Navi Mumbai.",

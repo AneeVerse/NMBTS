@@ -1,33 +1,44 @@
+import Image from 'next/image';
+
 export default function Footer({ data }) {
   return (
-    <footer id="contact" className="bg-navy-900">
+    <footer className="bg-navy-900">
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-5 lg:px-8 py-14 lg:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-10">
-          {/* Company — 3 cols */}
-          <div className="lg:col-span-3">
+      <div className="max-w-7xl mx-auto px-5 lg:px-8 py-12 lg:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-10">
+          {/* Company — 4 cols */}
+          <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-9 h-9 rounded-lg bg-gold/15 flex items-center justify-center text-gold font-bold text-sm">N</div>
-              <span className="text-base font-bold text-white">NMBTS</span>
+              <Image
+                src="/nmbts-logo.png"
+                alt="NMBTS Logo"
+                width={36}
+                height={36}
+                className="object-contain"
+              />
+              <div>
+                <span className="text-sm font-bold text-white block leading-tight">NMBTS</span>
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider">Business & Training Solutions</span>
+              </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
               {data.companyName}
             </p>
             <p className="text-xs text-gray-500">
-              Managed by {data.managedBy}
+              Managed by <span className="text-gray-400">{data.managedBy}</span>
             </p>
           </div>
 
-          {/* Contact — 3 cols */}
-          <div className="lg:col-span-3">
-            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-5">Get In Touch</h4>
+          {/* Contact — 2 cols */}
+          <div className="lg:col-span-2">
+            <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase text-white/80 mb-5">Contact</h4>
             <div className="space-y-3.5">
-              <a href={`mailto:${data.email}`} className="flex items-center gap-3 text-sm text-gray-400 hover:text-gold transition-colors group">
-                <svg className="w-4 h-4 flex-shrink-0 text-gray-500 group-hover:text-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+              <a href={`mailto:${data.email}`} className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-gold transition-colors group">
+                <svg className="w-4 h-4 flex-shrink-0 text-gold/50 group-hover:text-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
                 {data.email}
               </a>
-              <a href={`tel:+91${data.phone}`} className="flex items-center gap-3 text-sm text-gray-400 hover:text-gold transition-colors group">
-                <svg className="w-4 h-4 flex-shrink-0 text-gray-500 group-hover:text-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
+              <a href={`tel:+91${data.phone}`} className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-gold transition-colors group">
+                <svg className="w-4 h-4 flex-shrink-0 text-gold/50 group-hover:text-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
                 +91 {data.phone}
               </a>
             </div>
@@ -35,17 +46,17 @@ export default function Footer({ data }) {
 
           {/* Address — 4 cols */}
           <div className="lg:col-span-4">
-            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-5">Office</h4>
-            <div className="flex items-start gap-3">
-              <svg className="w-4 h-4 flex-shrink-0 text-gray-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+            <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase text-white/80 mb-5">Office</h4>
+            <div className="flex items-start gap-2.5">
+              <svg className="w-4 h-4 flex-shrink-0 text-gold/50 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
               <p className="text-sm text-gray-400 leading-relaxed">{data.address}</p>
             </div>
           </div>
 
           {/* Social — 2 cols */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-400 mb-5">Follow Us</h4>
-            <div className="flex gap-3">
+            <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase text-white/80 mb-5">Follow Us</h4>
+            <div className="flex gap-2.5">
               <a href={data.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/15 border border-white/10 hover:border-gold/30 flex items-center justify-center text-gray-400 hover:text-gold transition-all" aria-label="LinkedIn">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </a>
@@ -67,7 +78,7 @@ export default function Footer({ data }) {
             &copy; {new Date().getFullYear()} {data.companyName}. All rights reserved.
           </p>
           <p className="text-xs text-gray-500">
-            GST No.: {data.gst}
+            GST No.: <span className="text-gray-400">{data.gst}</span>
           </p>
         </div>
       </div>
