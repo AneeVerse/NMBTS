@@ -35,7 +35,7 @@ export default function EcosystemCarousel({ cards }) {
       {/* Featured card (first card - BNI) — full-width immersive layout */}
       <div className="mb-8 relative rounded-2xl overflow-hidden shadow-lg group">
         {/* Full-width background image */}
-        <div className="relative min-h-[320px] lg:min-h-[420px]">
+        <div className="relative min-h-[440px] lg:min-h-[420px]">
           <Image
             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&q=85&auto=format&fit=crop"
             alt="BNI Navi Mumbai networking"
@@ -84,7 +84,7 @@ export default function EcosystemCarousel({ cards }) {
             {/* Bottom row — name + description + CTA */}
             <div className="max-w-2xl">
               <h3 className="text-2xl lg:text-4xl font-bold text-white mb-3 tracking-tight">{featured.name}</h3>
-              <p className="text-sm lg:text-base text-white/75 leading-relaxed mb-5 max-w-xl">{featured.description}</p>
+              <p className="hidden sm:block text-sm lg:text-base text-white/75 leading-relaxed mb-5 max-w-xl">{featured.description}</p>
               {/* Mobile stats */}
               <div className="flex lg:hidden items-center gap-5 mb-5">
                 <div>
