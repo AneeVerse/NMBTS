@@ -9,6 +9,7 @@ import AboutLeaderSection from './components/AboutLeaderSection';
 import FinalCTASection from './components/FinalCTASection';
 import Footer from './components/Footer';
 import WhatsAppSticky from './components/WhatsAppSticky';
+import PopupForm from './components/PopupForm';
 
 export const dynamic = 'force-dynamic';
 
@@ -43,6 +44,7 @@ export default async function Home() {
         </div>
       </main>
       <WhatsAppSticky phone={whatsappPhone} />
+      <PopupForm />
     </>
   );
 }
