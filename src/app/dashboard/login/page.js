@@ -37,7 +37,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left — navy panel */}
-      <div className="hidden lg:flex lg:w-[42%] relative overflow-hidden flex-col justify-between p-12 bg-navy">
+      <div className="hidden lg:flex lg:w-[42%] relative overflow-hidden flex-col justify-center p-14 bg-navy">
         {/* Subtle pattern */}
         <div className="absolute inset-0 opacity-[0.04]" style={{
           backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)',
@@ -60,13 +60,11 @@ export default function LoginPage() {
           <p className="text-white/50 mt-4 text-sm leading-relaxed max-w-[220px]">
             Manage your website content and settings from one secure place.
           </p>
-        </div>
-
-        {/* Bottom text */}
-        <div className="relative z-10">
-          <div className="h-px w-12 bg-white/30 mb-4" />
-          <p className="text-white/50 text-xs">Navi Mumbai Business Training Services</p>
-          <p className="text-white/30 text-xs mt-1">Secure · Private · Admin Only</p>
+          <div className="mt-10">
+            <div className="h-px w-12 bg-white/20 mb-4" />
+            <p className="text-white/40 text-xs">Navi Mumbai Business Training Services</p>
+            <p className="text-white/25 text-xs mt-1">Secure · Private · Admin Only</p>
+          </div>
         </div>
       </div>
 
