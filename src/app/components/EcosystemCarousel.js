@@ -24,7 +24,7 @@ const cardColors = [
   'bg-maroon-dark',
 ];
 
-export default function EcosystemCarousel({ cards }) {
+export default function EcosystemCarousel({ cards, whatsappPhone }) {
   const scrollRef = useRef(null);
 
   const featured = cards[0];
@@ -96,7 +96,7 @@ export default function EcosystemCarousel({ cards }) {
                   <span className="text-xs text-white/60 ml-1">Members</span>
                 </div>
               </div>
-              <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${featured.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded-lg text-sm transition-all duration-200 hover:shadow-lg hover:shadow-gold/20">
+              <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${featured.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded-lg text-sm transition-all duration-200 hover:shadow-lg hover:shadow-gold/20">
                 Learn More
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
               </a>
@@ -123,7 +123,7 @@ export default function EcosystemCarousel({ cards }) {
               <h3 className="text-base font-bold text-navy leading-snug mb-1">{card.name}</h3>
               <p className="text-xs font-medium text-gold mb-3">{card.tagline}</p>
               <p className="text-sm text-gray-500 leading-relaxed mb-5">{card.description}</p>
-              <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-navy font-semibold text-xs hover:text-gold hover:gap-2.5 transition-all">
+              <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-navy font-semibold text-xs hover:text-gold hover:gap-2.5 transition-all">
                 Learn More
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
               </a>
@@ -151,7 +151,7 @@ export default function EcosystemCarousel({ cards }) {
             {/* Description */}
             <p className="text-sm text-gray-500 leading-relaxed mb-5">{card.description}</p>
             {/* CTA */}
-            <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-navy font-semibold text-xs group-hover:text-gold group-hover:gap-2.5 transition-all">
+            <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-navy font-semibold text-xs group-hover:text-gold group-hover:gap-2.5 transition-all">
               Learn More
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>

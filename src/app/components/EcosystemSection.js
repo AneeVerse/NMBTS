@@ -1,6 +1,6 @@
 import EcosystemCarousel from './EcosystemCarousel';
 
-export default function EcosystemSection({ data }) {
+export default function EcosystemSection({ data, whatsappPhone }) {
   return (
     <section id="ecosystem" className="py-14 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
@@ -15,7 +15,7 @@ export default function EcosystemSection({ data }) {
           </h2>
         </div>
 
-        <EcosystemCarousel cards={data.cards} />
+        <EcosystemCarousel cards={data.cards} whatsappPhone={whatsappPhone} />
       </div>
     </section>
   );

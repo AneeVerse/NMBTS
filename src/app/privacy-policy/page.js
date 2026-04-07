@@ -200,8 +200,8 @@ export default function PrivacyPolicy() {
                 </a>
               </p>
               <p className="text-sm">
-                <a href="tel:+919372477160" className="text-gold hover:text-navy transition-colors font-medium">
-                  +91 93724 77160
+                <a href="tel:+919136887730" className="text-gold hover:text-navy transition-colors font-medium">
+                  +91 91368 87730
                 </a>
               </p>
               <p className="text-xs text-gray-400 pt-2">GST No.: 27AAQFN6854P1Z6</p>
