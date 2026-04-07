@@ -11,7 +11,7 @@ export const defaults = {
     headline: "One Ecosystem. Every Stage of Your Business Journey.",
     subheadline: "Networking | Peer Advisory | Business Transitions | Franchise & Distribution - All Under One Roof in Navi Mumbai.",
     ctaText: "Talk to Us on WhatsApp",
-    whatsappPhone: "919372477160",
+    whatsappPhone: "919136887730",
   },
   intro: {
     paragraph: "Navi Mumbai Business Training   Services (NMBTS) is a multi-platform business growth ecosystem led by Pankaj Harwansh - helping business owners connect, scale, transition, and lead with clarity and confidence.",
@@ -77,7 +77,7 @@ export const defaults = {
     address: "Shelton Sapphire, A Wing, Office 707, Near Belapur Sessions Court, Sector 15, CBD Belapur, Navi Mumbai - 400614",
     gst: "27AAQFN6854P1Z6",
     email: "pankaj@bni-india.in",
-    phone: "9372477160",
+    phone: "9136887730",
     socialLinks: {
       linkedin: "#",
       facebook: "#",
