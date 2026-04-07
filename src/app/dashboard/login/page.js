@@ -35,52 +35,38 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-navy flex">
-      {/* Left decorative panel */}
-      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden flex-col justify-between p-12">
-        {/* Background layers */}
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)',
-          backgroundSize: '48px 48px'
+    <div className="min-h-screen flex">
+      {/* Left — gold panel */}
+      <div className="hidden lg:flex lg:w-[42%] relative overflow-hidden flex-col justify-between p-12" style={{ background: 'linear-gradient(135deg, #b8973a 0%, #d4a843 40%, #c49a35 70%, #a07828 100%)' }}>
+        {/* Subtle pattern */}
+        <div className="absolute inset-0 opacity-[0.06]" style={{
+          backgroundImage: 'linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px)',
+          backgroundSize: '40px 40px'
         }} />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gold/5 rounded-full blur-[80px]" />
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-[80px]" />
+        <div className="absolute -bottom-20 -left-10 w-64 h-64 bg-black/10 rounded-full blur-[60px]" />
 
-        {/* Logo area */}
+        {/* Top brand */}
         <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-xs font-semibold tracking-[0.25em] uppercase text-gold">Admin Portal</span>
+          <div className="flex items-center gap-2 mb-8">
+            <div className="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+              <div className="w-4 h-4 bg-white rounded-sm" />
+            </div>
+            <span className="text-white font-bold text-lg tracking-wide">NMBTS</span>
           </div>
-          <h1 className="text-3xl font-bold text-white mt-6 leading-tight">
-            NMBTS<br />Content Manager
+          <h1 className="text-4xl font-bold text-white leading-tight">
+            Admin<br />Dashboard
           </h1>
-          <p className="text-white/50 mt-3 text-sm leading-relaxed max-w-xs">
-            Manage your website content, sections, and settings from one place.
+          <p className="text-white/70 mt-4 text-sm leading-relaxed max-w-[220px]">
+            Manage your website content and settings from one secure place.
           </p>
         </div>
 
-        {/* Stats / info cards */}
-        <div className="relative z-10 space-y-3">
-          {[
-            { icon: '⚡', label: 'Live Updates', desc: 'Changes reflect instantly on the website' },
-            { icon: '🔒', label: 'Secure Access', desc: 'Session-based authentication' },
-            { icon: '🎛️', label: 'Full Control', desc: 'Edit every section and field' },
-          ].map((item) => (
-            <div key={item.label} className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 backdrop-blur-sm">
-              <span className="text-lg mt-0.5">{item.icon}</span>
-              <div>
-                <div className="text-white text-sm font-semibold">{item.label}</div>
-                <div className="text-white/40 text-xs mt-0.5">{item.desc}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom brand */}
+        {/* Bottom text */}
         <div className="relative z-10">
-          <p className="text-white/25 text-xs">Navi Mumbai Business Training Services</p>
+          <div className="h-px w-12 bg-white/30 mb-4" />
+          <p className="text-white/50 text-xs">Navi Mumbai Business Training Services</p>
+          <p className="text-white/30 text-xs mt-1">Secure · Private · Admin Only</p>
         </div>
       </div>
 
