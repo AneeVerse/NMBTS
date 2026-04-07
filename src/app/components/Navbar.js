@@ -48,7 +48,7 @@ export default function Navbar({ whatsappPhone }) {
               NMBTS
             </div>
             <div className={`text-[10px] tracking-wider uppercase transition-colors ${scrolled ? 'text-gray-500' : 'text-white/60'}`}>
-              Business & Training Solutions
+              Business Training Services
             </div>
           </div>
         </a>
