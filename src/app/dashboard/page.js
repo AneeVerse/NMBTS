@@ -16,6 +16,7 @@ const SECTION_CONFIG = {
   hero: {
     label: 'Hero Section',
     fields: {
+      eyebrow: { type: 'text', label: 'Eyebrow Text (small label above headline)' },
       headline: { type: 'text', label: 'Headline' },
       subheadline: { type: 'textarea', label: 'Subheadline' },
       ctaText: { type: 'text', label: 'CTA Button Text' },

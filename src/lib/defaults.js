@@ -7,13 +7,14 @@ export const defaults = {
     ogDescription: "From referral networking and peer advisory to M&A and franchising - NMBTS connects Navi Mumbai's business owners to the right platform at every stage of their journey.",
   },
   hero: {
+    eyebrow: "Navi Mumbai Business Training Services",
     headline: "One Ecosystem. Every Stage of Your Business Journey.",
     subheadline: "Networking | Peer Advisory | Business Transitions | Franchise & Distribution - All Under One Roof in Navi Mumbai.",
     ctaText: "Talk to Us on WhatsApp",
     whatsappPhone: "919372477160",
   },
   intro: {
-    paragraph: "Navi Mumbai Business & Training Solutions (NMBTS) is a multi-platform business growth ecosystem led by Pankaj Harwansh - helping business owners connect, scale, transition, and lead with clarity and confidence.",
+    paragraph: "Navi Mumbai Business Training   Services (NMBTS) is a multi-platform business growth ecosystem led by Pankaj Harwansh - helping business owners connect, scale, transition, and lead with clarity and confidence.",
   },
   ecosystem: {
     title: "The Ecosystem",
@@ -71,7 +72,7 @@ export const defaults = {
     ctaText: "WhatsApp Us Now",
   },
   footer: {
-    companyName: "Navi Mumbai Business & Training Solutions",
+    companyName: "Navi Mumbai Business Training   Services",
     managedBy: "Pankaj Harwansh",
     address: "Shelton Sapphire, A Wing, Office 707, Near Belapur Sessions Court, Sector 15, CBD Belapur, Navi Mumbai - 400614",
     gst: "27AAQFN6854P1Z6",
