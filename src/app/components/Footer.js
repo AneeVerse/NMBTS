@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer({ data }) {
   const navLinks = [
@@ -92,9 +93,14 @@ export default function Footer({ data }) {
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} {data.companyName}. All rights reserved.
           </p>
-          <p className="text-sm text-white font-bold">
-            GST No.: {data.gst}
-          </p>
+          <div className="flex items-center gap-5">
+            <Link href="/privacy-policy" className="text-xs text-white/40 hover:text-gold transition-colors">
+              Privacy Policy
+            </Link>
+            <p className="text-sm text-white font-bold">
+              GST No.: {data.gst}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
