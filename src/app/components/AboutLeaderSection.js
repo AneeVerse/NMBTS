@@ -62,7 +62,7 @@ export default function AboutLeaderSection({ data }) {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-10 bg-gold" />
-              <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold">Leadership</span>
+              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Leadership</span>
             </div>
             <h2 className="text-2xl lg:text-3xl font-bold text-navy tracking-tight mb-8 leading-snug">
               {data.headline}

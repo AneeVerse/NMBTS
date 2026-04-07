@@ -33,7 +33,7 @@ export default function WhoThisIsForSection({ data, whatsappPhone }) {
             <div className="lg:col-span-5">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-px w-10 bg-gold" />
-                <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-gold">Who This Is For</span>
+                <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Who This Is For</span>
               </div>
               <h2 className="text-2xl lg:text-3xl font-bold text-white tracking-tight mb-6 leading-snug">
                 {data.headline}

@@ -37,7 +37,7 @@ export default function ContactSection({ whatsappPhone }) {
         {/* Section header */}
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-10 bg-gold" />
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">Contact Us</span>
+          <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Contact Us</span>
         </div>
         <div className="mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-navy tracking-tight mb-3">
