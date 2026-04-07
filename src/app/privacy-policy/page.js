@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | NMBTS - Navi Mumbai Business & Training Solutions',
-  description: 'Privacy Policy for Navi Mumbai Business & Training Solutions (NMBTS). Learn how we collect, use, and protect your personal information.',
+  title: 'Privacy Policy | NMBTS - Navi Mumbai Business Training Services',
+  description: 'Privacy Policy for Navi Mumbai Business Training Services (NMBTS). Learn how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicy() {
