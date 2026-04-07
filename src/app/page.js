@@ -37,7 +37,7 @@ export default async function Home() {
       <main>
         <HeroSection data={content.hero} whatsappPhone={whatsappPhone} />
         <IntroSection data={content.intro} />
-        <EcosystemSection data={content.ecosystem} />
+        <EcosystemSection data={content.ecosystem} whatsappPhone={whatsappPhone} />
         <WhoThisIsForSection data={content.whoThisIsFor} whatsappPhone={whatsappPhone} />
         <AboutLeaderSection data={content.aboutLeader} />
         <ContactSection whatsappPhone={whatsappPhone} />

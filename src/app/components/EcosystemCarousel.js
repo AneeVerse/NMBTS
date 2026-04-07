@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 const cardIcons = [
   // BNI - globe/network (filled)
-  <svg key="bni" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>,
+  <svg key="bni" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>,
   // Corporate Connections - handshake
-  <svg key="cc" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M16.48 10.41c-.39.39-1.04.39-1.43 0l-4.47-4.46-7.05 7.04-.66-.63a3 3 0 010-4.24l4.24-4.24a3 3 0 014.24 0L16.48 9c.39.39.39 1.02 0 1.41zm.7 2.12a1.003 1.003 0 00-1.42 0l-3.54 3.54a1.003 1.003 0 000 1.42c.39.39 1.02.39 1.41 0l3.54-3.54c.4-.39.4-1.03.01-1.42zm3.54-1.42a1.003 1.003 0 00-1.42 0l-3.54 3.54c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l3.54-3.54c.4-.39.4-1.02.01-1.41zm-2.12 4.24a1.003 1.003 0 00-1.42 0l-1.06 1.06c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.06-1.06c.4-.39.4-1.02.01-1.41z"/></svg>,
+  <svg key="cc" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M16.48 10.41c-.39.39-1.04.39-1.43 0l-4.47-4.46-7.05 7.04-.66-.63a3 3 0 010-4.24l4.24-4.24a3 3 0 014.24 0L16.48 9c.39.39.39 1.02 0 1.41zm.7 2.12a1.003 1.003 0 00-1.42 0l-3.54 3.54a1.003 1.003 0 000 1.42c.39.39 1.02.39 1.41 0l3.54-3.54c.4-.39.4-1.03.01-1.42zm3.54-1.42a1.003 1.003 0 00-1.42 0l-3.54 3.54c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l3.54-3.54c.4-.39.4-1.02.01-1.41zm-2.12 4.24a1.003 1.003 0 00-1.42 0l-1.06 1.06c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.06-1.06c.4-.39.4-1.02.01-1.41z" /></svg>,
   // TAB - shield/mentorship
-  <svg key="tab" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>,
+  <svg key="tab" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" /></svg>,
   // YBounce - trending up
-  <svg key="yb" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>,
+  <svg key="yb" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" /></svg>,
   // DealsFlow - swap/exchange
-  <svg key="df" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg>,
+  <svg key="df" className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z" /></svg>,
 ];
 
 const cardColors = [
@@ -24,7 +24,7 @@ const cardColors = [
   'bg-maroon-dark',
 ];
 
-export default function EcosystemCarousel({ cards }) {
+export default function EcosystemCarousel({ cards, whatsappPhone }) {
   const scrollRef = useRef(null);
 
   const featured = cards[0];
@@ -96,9 +96,9 @@ export default function EcosystemCarousel({ cards }) {
                   <span className="text-xs text-white/60 ml-1">Members</span>
                 </div>
               </div>
-              <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${featured.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded-lg text-sm transition-all duration-200 hover:shadow-lg hover:shadow-gold/20">
+              <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${featured.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded-lg text-sm transition-all duration-200 hover:shadow-lg hover:shadow-gold/20">
                 Learn More
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </a>
             </div>
           </div>
@@ -122,9 +122,9 @@ export default function EcosystemCarousel({ cards }) {
               <h3 className="text-base font-bold text-white leading-snug mb-1">{card.name}</h3>
               <p className="text-xs font-medium text-gold/70 mb-3">{card.tagline}</p>
               <p className="text-sm text-white/60 leading-relaxed mb-5">{card.description}</p>
-              <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gold font-semibold text-xs hover:gap-3 transition-all">
+              <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gold font-semibold text-xs hover:gap-3 transition-all">
                 Learn More
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </a>
             </div>
           ))}
@@ -144,9 +144,9 @@ export default function EcosystemCarousel({ cards }) {
             <h3 className="text-base font-bold text-white leading-snug mb-1">{card.name}</h3>
             <p className="text-xs font-medium text-gold/70 mb-3">{card.tagline}</p>
             <p className="text-sm text-white/60 leading-relaxed mb-5">{card.description}</p>
-            <a href={`https://wa.me/919372477160?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gold font-semibold text-xs group-hover:gap-3 transition-all duration-300">
+            <a href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(`Hi, I'd like to know more about ${card.name}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gold font-semibold text-xs group-hover:gap-3 transition-all duration-300">
               Learn More
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
             </a>
           </div>
         ))}
