@@ -27,7 +27,9 @@ export default async function Home() {
     content = { ...defaults };
   }
 
-  const whatsappPhone = content.hero.whatsappPhone;
+  const whatsappPhone = content.footer.phone
+    ? '91' + content.footer.phone
+    : content.hero.whatsappPhone;
 
   return (
     <>
