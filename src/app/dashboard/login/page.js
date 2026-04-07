@@ -36,28 +36,28 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left — gold panel */}
-      <div className="hidden lg:flex lg:w-[42%] relative overflow-hidden flex-col justify-between p-12" style={{ background: 'linear-gradient(135deg, #b8973a 0%, #d4a843 40%, #c49a35 70%, #a07828 100%)' }}>
+      {/* Left — navy panel */}
+      <div className="hidden lg:flex lg:w-[42%] relative overflow-hidden flex-col justify-between p-12 bg-navy">
         {/* Subtle pattern */}
-        <div className="absolute inset-0 opacity-[0.06]" style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px)',
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)',
           backgroundSize: '40px 40px'
         }} />
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-[80px]" />
-        <div className="absolute -bottom-20 -left-10 w-64 h-64 bg-black/10 rounded-full blur-[60px]" />
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-gold/10 rounded-full blur-[80px]" />
+        <div className="absolute -bottom-20 -left-10 w-64 h-64 bg-gold/5 rounded-full blur-[60px]" />
 
         {/* Top brand */}
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-8">
-            <div className="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-              <div className="w-4 h-4 bg-white rounded-sm" />
+            <div className="w-9 h-9 bg-gold/20 rounded-xl flex items-center justify-center">
+              <div className="w-4 h-4 bg-gold rounded-sm" />
             </div>
             <span className="text-white font-bold text-lg tracking-wide">NMBTS</span>
           </div>
           <h1 className="text-4xl font-bold text-white leading-tight">
             Admin<br />Dashboard
           </h1>
-          <p className="text-white/70 mt-4 text-sm leading-relaxed max-w-[220px]">
+          <p className="text-white/50 mt-4 text-sm leading-relaxed max-w-[220px]">
             Manage your website content and settings from one secure place.
           </p>
         </div>
