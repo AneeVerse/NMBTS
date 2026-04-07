@@ -8,7 +8,7 @@ export default function EcosystemSection({ data }) {
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-px w-10 bg-gold" />
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">Our Platforms</span>
+            <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Our Platforms</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-navy tracking-tight">
             {data.title}
