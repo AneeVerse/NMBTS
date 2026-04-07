@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
           {/* Intro */}
           <section>
             <p className="text-gray-600 leading-relaxed text-base">
-              Navi Mumbai Business &amp; Training Solutions (<strong>"NMBTS"</strong>, <strong>"we"</strong>, <strong>"our"</strong>, or <strong>"us"</strong>) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or contact us through any of our platforms.
+              Navi Mumbai Business Training Services (<strong>"NMBTS"</strong>, <strong>"we"</strong>, <strong>"our"</strong>, or <strong>"us"</strong>) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or contact us through any of our platforms.
             </p>
             <p className="text-gray-600 leading-relaxed text-base mt-4">
               Please read this policy carefully. If you disagree with its terms, please discontinue use of our website.
@@ -191,7 +191,7 @@ export default function PrivacyPolicy() {
               If you have any questions or concerns about this Privacy Policy, please contact us:
             </p>
             <div className="bg-gray-50 rounded-2xl p-6 lg:p-8 space-y-3">
-              <p className="font-bold text-navy">Navi Mumbai Business &amp; Training Solutions</p>
+              <p className="font-bold text-navy">Navi Mumbai Business Training Services</p>
               <p className="text-sm text-gray-600">Managed by Pankaj Harwansh</p>
               <p className="text-sm text-gray-600">Shelton Sapphire, A Wing, Office 707, Near Belapur Sessions Court,<br />Sector 15, CBD Belapur, Navi Mumbai — 400614</p>
               <p className="text-sm">
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
       <div className="bg-navy-900 border-t border-white/5">
         <div className="max-w-4xl mx-auto px-5 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} Navi Mumbai Business &amp; Training Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} Navi Mumbai Business Training Services. All rights reserved.
           </p>
           <Link href="/" className="text-xs text-white/40 hover:text-gold transition-colors">
             ← Back to Home

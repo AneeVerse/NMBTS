@@ -26,7 +26,7 @@ export default function Footer({ data }) {
               />
               <div>
                 <span className="text-base font-bold text-white block leading-tight">NMBTS</span>
-                <span className="text-[10px] text-white/50 uppercase tracking-wider">Business & Training Solutions</span>
+                <span className="text-[10px] text-white/50 uppercase tracking-wider">Business Training Services</span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-3">
