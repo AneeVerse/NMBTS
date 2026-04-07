@@ -18,9 +18,9 @@ export async function ensureAdmin() {
   const exists = await db.collection('admin_users').findOne({});
   if (!exists) {
     const salt = crypto.randomBytes(16).toString('hex');
-    const passwordHash = hashPassword('nmbts@2025', salt);
+    const passwordHash = hashPassword('nmbts@2026', salt);
     await db.collection('admin_users').insertOne({
-      username: 'admin',
+      username: 'nmbts@2026',
       passwordHash,
       salt,
       createdAt: new Date(),
