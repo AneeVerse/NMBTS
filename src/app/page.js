@@ -8,8 +8,8 @@ import WhoThisIsForSection from './components/WhoThisIsForSection';
 import AboutLeaderSection from './components/AboutLeaderSection';
 import FinalCTASection from './components/FinalCTASection';
 import Footer from './components/Footer';
+import ContactSection from './components/ContactSection';
 import WhatsAppSticky from './components/WhatsAppSticky';
-import PopupForm from './components/PopupForm';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,13 +38,11 @@ export default async function Home() {
         <EcosystemSection data={content.ecosystem} />
         <WhoThisIsForSection data={content.whoThisIsFor} whatsappPhone={whatsappPhone} />
         <AboutLeaderSection data={content.aboutLeader} />
-        <div id="contact">
-          <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
-          <Footer data={content.footer} />
-        </div>
+        <ContactSection whatsappPhone={whatsappPhone} />
+        <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
+        <Footer data={content.footer} />
       </main>
       <WhatsAppSticky phone={whatsappPhone} />
-      <PopupForm />
     </>
   );
 }
