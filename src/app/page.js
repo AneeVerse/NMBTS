@@ -35,7 +35,7 @@ export default async function Home() {
     <>
       <Navbar whatsappPhone={whatsappPhone} />
       <main>
-        <HeroSection data={content.hero} />
+        <HeroSection data={content.hero} whatsappPhone={whatsappPhone} />
         <IntroSection data={content.intro} />
         <EcosystemSection data={content.ecosystem} />
         <WhoThisIsForSection data={content.whoThisIsFor} whatsappPhone={whatsappPhone} />

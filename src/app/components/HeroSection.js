@@ -1,7 +1,8 @@
 import Image from 'next/image';
 
-export default function HeroSection({ data }) {
-  const whatsappUrl = `https://wa.me/${data.whatsappPhone}?text=${encodeURIComponent("Hi, I'd like to know more about NMBTS.")}`;
+export default function HeroSection({ data, whatsappPhone }) {
+  const phone = whatsappPhone || data.whatsappPhone;
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent("Hi, I'd like to know more about NMBTS.")}`;
 
   return (
     <section className="relative min-h-[640px] lg:min-h-[720px] flex items-center bg-navy overflow-hidden pt-24 pb-16 lg:pt-28 lg:pb-20">
