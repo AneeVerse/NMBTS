@@ -24,10 +24,10 @@ export default function HeroSection({ data }) {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2.5 mb-7">
               <div className="h-px w-10 bg-gold" />
-              <span className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">{data.eyebrow}</span>
+              <span className="text-base sm:text-lg font-semibold tracking-[0.2em] uppercase text-gold">{data.eyebrow}</span>
             </div>
 
-            <h1 className="text-[32px] sm:text-4xl lg:text-[54px] font-bold text-white leading-[1.1] mb-6 tracking-tight">
+            <h1 className="text-[28px] sm:text-[34px] lg:text-[48px] font-bold text-white leading-[1.1] mb-6 tracking-tight">
               {data.headline}
             </h1>
 
