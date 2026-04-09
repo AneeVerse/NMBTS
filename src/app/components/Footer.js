@@ -36,12 +36,18 @@ export default function Footer({ data }) {
               Managed by <span className="text-white/70">{data.managedBy}</span>
             </p>
             {/* Nav links */}
-            <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
               {navLinks.map((link) => (
                 <a key={link.href} href={link.href} className="text-sm text-white/60 hover:text-gold transition-colors">
                   {link.label}
                 </a>
               ))}
+            </div>
+            {/* GST */}
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
+              <span className="text-[10px] font-semibold tracking-widest uppercase text-gold">GST</span>
+              <span className="w-px h-3 bg-white/20" />
+              <span className="text-sm font-bold text-white tracking-wide">{data.gst}</span>
             </div>
           </div>
 
@@ -90,16 +96,34 @@ export default function Footer({ data }) {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 lg:px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
+          {/* Left — copyright */}
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} {data.companyName}. All rights reserved.
           </p>
-          <div className="flex items-center gap-5">
-            <Link href="/privacy-policy" className="text-xs text-white/40 hover:text-gold transition-colors">
-              Privacy Policy
-            </Link>
-            <p className="text-sm text-white font-bold">
-              GST No.: {data.gst}
-            </p>
+
+          {/* Middle — privacy */}
+          <Link href="/privacy-policy" className="text-xs text-white/40 hover:text-gold transition-colors">
+            Privacy Policy
+          </Link>
+
+          {/* Right — Aneeverse */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.aneeverse.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs text-white/40 hover:text-white/70 transition-colors"
+            >
+              Designed &amp; Managed by
+              <span className="font-semibold text-white/50">Aneeverse</span>
+              <Image
+                src="/aneeverse-logo.svg"
+                alt="Aneeverse"
+                width={16}
+                height={16}
+                className="opacity-50"
+              />
+            </a>
           </div>
         </div>
       </div>

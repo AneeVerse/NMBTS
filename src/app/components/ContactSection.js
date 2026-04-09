@@ -101,7 +101,7 @@ export default function ContactSection({ whatsappPhone }) {
                   <div>
                     <div className="text-[10px] uppercase tracking-widest text-white/40 mb-1">Office</div>
                     <div className="text-sm text-white/70 leading-relaxed">
-                      Shelton Sapphire, CBD Belapur,<br />Navi Mumbai — 400614
+                      Shelton Sapphire, CBD Belapur,<br />Navi Mumbai - 400614
                     </div>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ export default function ContactSection({ whatsappPhone }) {
                       value={form.name}
                       onChange={update('name')}
                       placeholder="Full name"
-                      className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-300 bg-white"
+                      className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 bg-white"
                     />
                   </div>
                   <div>
@@ -168,7 +168,7 @@ export default function ContactSection({ whatsappPhone }) {
                       value={form.phone}
                       onChange={update('phone')}
                       placeholder="+91 98765 43210"
-                      className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-300 bg-white"
+                      className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 bg-white"
                     />
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function ContactSection({ whatsappPhone }) {
                     value={form.business}
                     onChange={update('business')}
                     placeholder="Your business name"
-                    className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-300 bg-white"
+                    className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 bg-white"
                   />
                 </div>
 
@@ -196,7 +196,7 @@ export default function ContactSection({ whatsappPhone }) {
                     value={form.message}
                     onChange={update('message')}
                     placeholder="Tell us what you're looking for — networking, advisory, M&A, or just a conversation..."
-                    className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-300 bg-white resize-none"
+                    className="w-full border border-gray-200 focus:border-gold rounded-lg px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 bg-white resize-none"
                   />
                 </div>
 
