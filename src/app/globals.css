@@ -143,3 +143,9 @@ body {
 /* Scrollbar hide utility (mobile carousels) */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Force dark background overrides for mayur editorial theme */
+.bg-navy    { background-color: #0A0F1C !important; }
+.bg-navy-light { background-color: #151C2E !important; }
+.bg-navy-900 { background-color: #05080F !important; }
+.text-navy  { color: #0A0F1C !important; }
