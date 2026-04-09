@@ -31,7 +31,7 @@ export default async function Home() {
     ? '91' + content.footer.phone
     : content.hero.whatsappPhone;
 
-  const callPhone = content.footer.callPhone || content.footer.phone || '9820496991';
+  const callPhone = content.footer.callPhone || '9820496991';
 
   return (
     <>
@@ -44,7 +44,7 @@ export default async function Home() {
         <AboutLeaderSection data={content.aboutLeader} />
         <ContactSection whatsappPhone={whatsappPhone} callPhone={callPhone} />
         <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
-        <Footer data={content.footer} />
+        <Footer data={content.footer} callPhone={callPhone} whatsappPhone={whatsappPhone} />
       </main>
       <WhatsAppSticky phone={whatsappPhone} />
     </>
