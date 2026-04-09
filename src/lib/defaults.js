@@ -78,6 +78,7 @@ export const defaults = {
     gst: "27AAQFN6854P1Z6",
     email: "pankaj@bni-india.in",
     phone: "9136887730",
+    callPhone: "9820496991",
     socialLinks: {
       linkedin: "#",
       facebook: "#",

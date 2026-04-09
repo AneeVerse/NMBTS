@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 
-export default function ContactSection({ whatsappPhone }) {
+export default function ContactSection({ whatsappPhone, callPhone }) {
   const [form, setForm] = useState({ name: '', phone: '', business: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | loading | success | error
 
-  const displayPhone = whatsappPhone?.startsWith('91')
+  const displayPhone = callPhone || (whatsappPhone?.startsWith('91')
     ? whatsappPhone.slice(2)
-    : whatsappPhone;
+    : whatsappPhone);
 
   function update(field) {
     return (e) => setForm((f) => ({ ...f, [field]: e.target.value }));

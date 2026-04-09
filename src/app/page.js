@@ -31,6 +31,8 @@ export default async function Home() {
     ? '91' + content.footer.phone
     : content.hero.whatsappPhone;
 
+  const callPhone = content.footer.callPhone || content.footer.phone || '9820496991';
+
   return (
     <>
       <Navbar whatsappPhone={whatsappPhone} />
@@ -40,7 +42,7 @@ export default async function Home() {
         <EcosystemSection data={content.ecosystem} whatsappPhone={whatsappPhone} />
         <WhoThisIsForSection data={content.whoThisIsFor} whatsappPhone={whatsappPhone} />
         <AboutLeaderSection data={content.aboutLeader} />
-        <ContactSection whatsappPhone={whatsappPhone} />
+        <ContactSection whatsappPhone={whatsappPhone} callPhone={callPhone} />
         <FinalCTASection data={content.finalCta} whatsappPhone={whatsappPhone} />
         <Footer data={content.footer} />
       </main>

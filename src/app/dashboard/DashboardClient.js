@@ -129,7 +129,8 @@ const SECTION_CONFIG = {
       address: { type: 'textarea', label: 'Address' },
       gst: { type: 'text', label: 'GST Number' },
       email: { type: 'text', label: 'Email' },
-      phone: { type: 'text', label: 'Phone (used as WhatsApp number site-wide)' },
+      phone: { type: 'text', label: 'WhatsApp Number (10 digits, no country code — used for all WhatsApp links site-wide)' },
+      callPhone: { type: 'text', label: 'Call Number (for tel: call links — can be different from WhatsApp)' },
     },
     socialFields: {
       label: 'Social Links',
